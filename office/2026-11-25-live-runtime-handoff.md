@@ -1,3 +1,6 @@
+# Latest verified checkpoint — Living Office v0.7 (2026-11-25)
+Implemented in real running office/runtime/index.html, deployed to E:\\LucyRun\\projects\\office-simulator\\index.html. HTML now draws articulated head/torso movement for five agents and breathing cat on live canvas over approved image; loops continuously irrespective of task state. JS syntax checked via node --check exit 0; live HTTP HTML includes renderLiving and fitOffice; API task idle, queue 5. Source GitHub commit 391476cf695f26a03402626a24e784bc1a9e11e7. Important: these are cutout deformations from approved image, NOT animation from six separate character sheets; no verified browser visual screenshot or user acceptance. Attempt to capture headless Chrome frames was blocked by desktop command policy; do not claim visual QC complete. Original scene and live overlays preserved. Next: user inspect motion quality, improve with proper sprites from sheets if required. Do not revert or redesign approved scene.
+
 # Global operating authority
 Read [MASTER OPERATING RULES V2.0](https://github.com/Markeera/Lucy-Edit-Kit/blob/main/bootstrap/MASTER_OPERATING_RULES_V2.md) before Lucy Run work. Older global response rules below are historical; current Office v0.5 evidence remains authoritative for Office state.
 
