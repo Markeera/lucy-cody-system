@@ -1,0 +1,34 @@
+{
+  "asset": "pose-atlas.png",
+  "purpose": "Twenty-four independently cycled pose images, four per role, from six user-supplied character sheets",
+  "sheetRows": [
+    "Script",
+    "Voice",
+    "Lucy",
+    "Visual",
+    "Editing",
+    "Cat"
+  ],
+  "frameColumns": 4,
+  "frameSize": [
+    210,
+    220
+  ],
+  "atlasSize": [
+    840,
+    1320
+  ],
+  "bytes": 2041862,
+  "sha256": "41b84dbc25fc91e7fa9ee4f974703a0e42fe0e1a2acf523b84820ebde45a49c1",
+  "encoding": "concatenate base64 chunks then decode",
+  "parts": [
+    "office/assets/pose-atlas-v1.part00.b64",
+    "office/assets/pose-atlas-v1.part01.b64",
+    "office/assets/pose-atlas-v1.part02.b64",
+    "office/assets/pose-atlas-v1.part03.b64",
+    "office/assets/pose-atlas-v1.part04.b64",
+    "office/assets/pose-atlas-v1.part05.b64"
+  ],
+  "sourceArchive": "Lucy_Run_Character_Sheets_V1.zip (user-supplied conversation attachment)",
+  "backupDrive": "https://drive.google.com/file/d/1tNZ6HGdR_HEfy6WeZfImnfQBrrV7s3M1/view"
+}
