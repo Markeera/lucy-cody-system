@@ -1,5 +1,6 @@
 from http.server import ThreadingHTTPServer,BaseHTTPRequestHandler
 import json,urllib.request,concurrent.futures,datetime
+from urllib.parse import urlsplit
 from pathlib import Path
 ROOT=Path(__file__).parent
 def probe(url):
@@ -17,8 +18,9 @@ def state():
  return s
 class Handler(BaseHTTPRequestHandler):
  def do_GET(self):
-  if self.path=="/api/state": data=json.dumps(state(),ensure_ascii=False).encode();kind="application/json"
-  elif self.path=="/":data=(ROOT/"index.html").read_bytes();kind="text/html; charset=utf-8"
+  path=urlsplit(self.path).path
+  if path=="/api/state": data=json.dumps(state(),ensure_ascii=False).encode();kind="application/json"
+  elif path=="/":data=(ROOT/"index.html").read_bytes();kind="text/html; charset=utf-8"
   else:self.send_error(404);return
   self.send_response(200);self.send_header("Content-Type",kind);self.send_header("Cache-Control","no-store");self.send_header("Content-Length",str(len(data)));self.end_headers();self.wfile.write(data)
 if __name__=="__main__":ThreadingHTTPServer(("127.0.0.1",8766),Handler).serve_forever()
