@@ -1,0 +1,22 @@
+{
+  "asset": "approved-office.png",
+  "source": "User approved original image 2026-11-25",
+  "width": 1672,
+  "height": 941,
+  "bytes": 3245295,
+  "sha256": "c710b754448d0e65a066a24dd5d18b0c4b4d8fc4c5b347c9f825492d12f72c53",
+  "encoding": "concatenate base64 text parts in numeric order, decode once",
+  "parts": [
+    "office/assets/approved-office.png.part00.b64",
+    "office/assets/approved-office.png.part01.b64",
+    "office/assets/approved-office.png.part02.b64",
+    "office/assets/approved-office.png.part03.b64",
+    "office/assets/approved-office.png.part04.b64",
+    "office/assets/approved-office.png.part05.b64",
+    "office/assets/approved-office.png.part06.b64",
+    "office/assets/approved-office.png.part07.b64",
+    "office/assets/approved-office.png.part08.b64",
+    "office/assets/approved-office.png.part09.b64"
+  ],
+  "backupDrive": "https://drive.google.com/file/d/1ESj_qOm-g70ibjoBw-P2Tu0KBsTo7CwM/view"
+}
