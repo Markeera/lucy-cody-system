@@ -1,0 +1,32 @@
+{
+  "asset": "pose-atlas-v2.png",
+  "source": "six user-approved character sheets in Lucy_Run_Character_Sheets_V1.zip",
+  "frames": 24,
+  "rows": [
+    "Script",
+    "Voice",
+    "Lucy",
+    "Visual",
+    "Editing",
+    "Cat"
+  ],
+  "columns": 4,
+  "frameSize": [
+    210,
+    220
+  ],
+  "atlasSize": [
+    840,
+    1320
+  ],
+  "bytes": 1400414,
+  "sha256": "4c9d7c8ebbde1c04fbe9be027ede9248f1ac06cc41e5b3ccc5f1eed775f7abe6",
+  "encoding": "concatenate base64 parts in ascending order, decode to PNG",
+  "parts": [
+    "office/assets/pose-atlas-v2.part00.b64",
+    "office/assets/pose-atlas-v2.part01.b64",
+    "office/assets/pose-atlas-v2.part02.b64",
+    "office/assets/pose-atlas-v2.part03.b64"
+  ],
+  "backupDrive": "https://drive.google.com/file/d/1HWuKcAUfjeZpWClDtq7QxiA7WLCFGZMc/view"
+}
