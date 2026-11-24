@@ -20,7 +20,7 @@ const living=document.createElement("canvas");living.width=1672;living.height=94
 living.style.cssText="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1";
 $("office").insertBefore(living,$("office").querySelector(".idle-layer"));
 const ctx=living.getContext("2d"),source=document.createElement("canvas");
-const poseAtlas=new Image();poseAtlas.src="/pose-atlas.png";
+const poseAtlas=new Image();poseAtlas.src="/pose-atlas-v2.png";
 source.width=1672;source.height=941;const src=source.getContext("2d");
 const puppets=[
  {name:"Script",x:220,y:522,head:[148,419,165,157],body:[147,545,192,124],phase:0,action:0,arm:[294,557,53,108]},
