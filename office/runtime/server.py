@@ -20,6 +20,7 @@ class Handler(BaseHTTPRequestHandler):
  def do_GET(self):
   path=urlsplit(self.path).path
   if path=="/api/state": data=json.dumps(state(),ensure_ascii=False).encode();kind="application/json"
+  elif path=="/approved-office.png":data=(ROOT/"approved-office.png").read_bytes();kind="image/png"
   elif path=="/":data=(ROOT/"index.html").read_bytes();kind="text/html; charset=utf-8"
   else:self.send_error(404);return
   self.send_response(200);self.send_header("Content-Type",kind);self.send_header("Cache-Control","no-store");self.send_header("Content-Length",str(len(data)));self.end_headers();self.wfile.write(data)
