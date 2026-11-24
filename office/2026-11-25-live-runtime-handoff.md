@@ -1,3 +1,6 @@
+# Global operating authority
+Read [MASTER OPERATING RULES V2.0](https://github.com/Markeera/Lucy-Edit-Kit/blob/main/bootstrap/MASTER_OPERATING_RULES_V2.md) before Lucy Run work. Older global response rules below are historical; current Office v0.5 evidence remains authoritative for Office state.
+
 # CURRENT OFFICE v0.5 — verified live original artwork
 User supplied exact reference; no generated replacement used. Original PNG archived in ten verified base64 parts, see office/assets/RESTORE_MANIFEST.json. Restored to actual PC from GitHub chunks via Desktop Commander, SHA256 c710b754448d0e65a066a24dd5d18b0c4b4d8fc4c5b347c9f825492d12f72c53, 1672x941, 3245295 bytes. Actual Office HTML overlays live queue, monitor and checks on original artwork. HTTP200 HTML, HTTPS asset full byte count, live queue 5 verified. Browser visual/user review pending. No agent orchestration yet. Private Tailscale URL unchanged. Runtime source is GitHub, PC only execution host. Transfer route verified: Drive connector upload local attachment -> raw fetch b64 -> GitHub chunks -> remote write_file append -> decode and hash. No need for user manual transfer.
 
