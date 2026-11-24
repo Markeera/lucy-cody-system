@@ -27,7 +27,7 @@ const sprites=[
  {name:"Visual",head:[1047,423,161,149],body:[1018,553,202,112],phase:4.7,rate:1.08},
  {name:"Editing",head:[1351,429,156,145],body:[1317,559,225,105],phase:5.7,rate:0.9}
 ];
-let liveFrame=0;
+let liveFrame=0,sourceReady=false;
 function smoothstep(x){return x*x*(3-2*x)}
 function cutoutBox(b,px,py,scale,angle){
  const [x,y,w,h]=b;
@@ -44,7 +44,7 @@ function renderLiving(now){
  if(!art.complete||!art.naturalWidth||now-liveFrame<40)return;
  liveFrame=now;
  const t=now/1000;
- if(source.datasetReady!==true){src.drawImage(art,0,0,1672,941);source.datasetReady=true}
+ if(!sourceReady){src.drawImage(art,0,0,1672,941);sourceReady=true}
  ctx.clearRect(0,0,1672,941);
  for(let i=0;i<sprites.length;i++){
   const a=sprites[i],q=t*a.rate+a.phase;
@@ -59,7 +59,7 @@ function renderLiving(now){
  const cat=[1201,818,165,91],z=t*.94;
  cutoutBox(cat,Math.sin(z*.3)*2,Math.sin(z)*3,1+Math.sin(z*1.8)*.025,Math.sin(z*.7)*.013);
 }
-art.addEventListener("load",()=>{source.datasetReady=false;src.clearRect(0,0,1672,941)});
+art.addEventListener("load",()=>{sourceReady=false;src.clearRect(0,0,1672,941)});
 requestAnimationFrame(renderLiving);
 
 function el(tag,txt,cls){let x=document.createElement(tag);x.textContent=txt;if(cls)x.className=cls;return x}
