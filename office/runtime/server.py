@@ -22,6 +22,8 @@ class Handler(BaseHTTPRequestHandler):
   if path=="/api/state": data=json.dumps(state(),ensure_ascii=False).encode();kind="application/json"
   elif path=="/pose-atlas-v2.png":data=(ROOT/"pose-atlas-v2.png").read_bytes();kind="image/png"
   elif path=="/pose-atlas.png":data=(ROOT/"pose-atlas.png").read_bytes();kind="image/png"
+  elif path=="/rig-atlas.png":data=(ROOT/"rig-atlas.png").read_bytes();kind="image/png"
+  elif path=="/rig.js":data=(ROOT/"rig.js").read_bytes();kind="application/javascript"
   elif path=="/approved-office.png":data=(ROOT/"approved-office.png").read_bytes();kind="image/png"
   elif path=="/":data=(ROOT/"index.html").read_bytes();kind="text/html; charset=utf-8"
   else:self.send_error(404);return
